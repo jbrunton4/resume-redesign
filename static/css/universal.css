@@ -81,7 +81,10 @@ section {
 }
 
 section:last-of-type {
-    border-radius: 0%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
 }
 
 /* colour styling */
