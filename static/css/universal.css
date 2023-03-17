@@ -80,6 +80,10 @@ section {
   border-radius: 10%;
 }
 
+section:last-of-type {
+    border-radius: 0%;
+}
+
 /* colour styling */
 
 .green {
@@ -230,3 +234,15 @@ hr {
 a, a:visited {
     color: #c3c3c3;
 }
+
+footer {
+text-align: center;
+bottom: 0;
+height: 5vh;
+width: 100%;
+padding: 5vh;
+font-size: 2vh;
+}
+
+footer img {
+height: 2vh;}
