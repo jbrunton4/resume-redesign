@@ -226,3 +226,7 @@ hr {
   border: 5px solid #161b21;
   border-radius: 50%;
 }
+
+a, a:visited {
+    color: #c3c3c3;
+}
