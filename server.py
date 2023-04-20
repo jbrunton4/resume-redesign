@@ -18,6 +18,10 @@ def alevels():
 def ref01():
   return flask.render_template("references/wetherby-high-school.html")
 
+@app.route("/projects", methods=["GET"])
+def projects():
+  return flask.render_template("projects/projects.html")
+
 # auto reload templates
 def before_request():
     app.jinja_env.cache = {}
