@@ -180,16 +180,6 @@ section:last-of-type {
   overflow-y: hidden;
 }
 
-.section-content ul {
-  list-style: disc inside;
-  margin-left: 20px;
-  padding-left: 0;
-}
-.section-content ul li {
-  margin-top: .75vh;
-
-}
-
 
 .green {
   background: #535e4b;
@@ -327,6 +317,7 @@ hr {
 
 
 
+
   header {
     transform: translateY(-100%);
     visibility: hidden;
@@ -346,12 +337,6 @@ hr {
     overflow: hidden;
   }
 }
-
-.subheader {
-  color: #c3c3c3;
-}
-
-
 
 .internal-redirect-a {
   color: #ffffff;
@@ -391,4 +376,49 @@ font-size: 2vh;
 
 footer img {
   height: 2vh;
+}
+
+li {
+  display: list-item;
+  list-style: disc outside none;
+}
+
+
+.flex-gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.flex-gallery > .small {
+  flex: 1 0 200px;
+}
+
+.flex-gallery .small img {
+  max-width: 200px;
+  max-height: 200px; 
+  object-fit: cover;
+}
+
+.flex-gallery > .medium {
+  flex: 1 0 300px;
+}
+
+.flex-gallery .medium img {
+  max-width: 300px;
+  max-height: 300px; 
+  object-fit: cover;
+}
+
+.flex-gallery > div {
+  flex: 1 0 400px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.flex-gallery img {
+  max-width: 400px;
+  max-height: 400px; 
+  object-fit: cover;
 }
