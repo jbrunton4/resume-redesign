@@ -1,0 +1,361 @@
+<html>
+
+<head>
+
+    <title>Josh Brunton</title>
+
+    <!-- basic HTML metadata -->
+    <meta charset="UTF-8" />
+    <meta description="Personal links page for Posh" />
+    <meta name="language" content="EN" />
+    <meta name="revised" content="Saturday, July 8th, 2023" />
+    <meta name="Classification" content="Personal" />
+    <meta name="Author" content="Josh Brunton" />
+    <meta name="Designer" content="Josh Brunton" />
+    <meta name="distribution" content="Global" />
+    <meta name='target' content='all' />
+    <meta name='HandheldFriendly' content='True' />
+    <meta name='MobileOptimized' content='320' />
+
+    <!-- import static components -->
+    <link rel="stylesheet" type="text/css" href="static/css/universal.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/tables.css" />
+    <script src="static/js/init.js" defer></script>
+    <script src="static/js/handleClockElements.js" defer></script>
+
+    <!-- import bootstrap (https://v5.getbootstrap.com/) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- import IconifyIcon web component -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- import highlight.js syntax highlighter -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <!-- import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Auto-set the base URL (why don't we do that anyway?) --
+        <base id="base" href="" target="_blank" />
+        <script defer>
+            document.getElementById("base").href = window.location.origin;
+        </script> 
+    
+        Update: Found out why we don't do that anyway -->
+
+</head>
+
+<body>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div id="main">
+            <nav>
+                <div class="tab"><a href=".">.../bio.md</a></div>
+                <div class="tab active"><a href="details">~/home/josh/details.md</a></div>
+                <div class="tab tab-small" id="nav-min"><a href="">🗕</a></div>
+                <div class="tab tab-small" id="nav-max"><a href="">🗖</a></div>
+                <div class="tab tab-small" id="nav-close"><a href="">✕</a></div>
+            </nav>
+            <div id="content">
+
+                <img id="pfp" src="static/img/avatar.png" alt="Profile picture">
+
+                <span style="display: flex; justify-content: space-between;">
+                    <span style="text-align: left;">
+                        <h1 style="display: inline;">Josh Brunton</h1> &nbsp;&nbsp;<span
+                            class="text-secondary">he/they</span>
+                        <h2 style="font-size: 1.5em;" class="text-secondary">Software Developer</h2>
+                    </span>
+                </span>
+
+                <hr />
+
+                <h2>💷 Experience</h2>
+                <details open style="margin-bottom: 2vh;">
+                    <summary>
+                        <b>Junior .NET Developer</b><span class="text-secondary"> | JUL 23 - PRESENT</span>
+                    </summary>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Invited back full-time after work experience in 2021<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Primarily working in C#<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Also using HTML, CSS, TSQL, XAML<br />
+                </details>
+
+                <details style="margin-bottom: 2vh;">
+                    <summary>
+                        <b>Volunteer Teaching Assistant</b><span class="text-secondary"> | JUN-JUL 21</span>
+                    </summary>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Fixed-term role after finishing GCSEs<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Leading GCSE Computer Science Classes<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Read a <a herf="reference.html" style="color: #fff;">reference</a><br />
+                </details>
+
+                <details style="margin-bottom: 2vh;">
+                    <summary>
+                        <b>Web Developer &amp; Salesperson</b><span class="text-secondary"> | OCT 19 - MAR 20</span>
+                    </summary>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ As part of my school's Young Enterprise team<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Designed and maintained an informational site<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Promoted &amp; sold products to customers</a><br />
+                </details>
+
+                <hr />
+
+                <h2>🎓 Education</h2>
+                <details style="margin-bottom: 2vh;">
+                    <summary>
+                        <b>6<sup>th</sup> Form</b><span class="text-secondary"> | SEPT 21 - JUN 23</span>
+                    </summary>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Board</th>
+                                <th>Subject</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AQA</td>
+                                <td>L3 Extended Project Qualification</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>AQA</td>
+                                <td>A-Level French</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>OCR</td>
+                                <td>A-Level Computer Science</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>OCR</td>
+                                <td>L3 Health Sciences (Coursework)</td>
+                                <td>Merit</td>
+                            </tr>
+                            <tr>
+                                <td>OCR</td>
+                                <td>L3 Health &amp; Social Care (Exams)</td>
+                                <td>Pass</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+
+                <details style="margin-bottom: 2vh;">
+                    <summary>
+                        <b>High School</b><span class="text-secondary"> | SEPT 18 - JUN 21</span>
+                    </summary>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Board</th>
+                                <th>Subject</th>
+                                <th>Grade</th>
+                                <th>End.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AQA</td>
+                                <td>Food Preparation And Nutrition</td>
+                                <td>7</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>AQA</td>
+                                <td>French Tier H</td>
+                                <td>8</td>
+                                <td>D</td>
+                            </tr>
+                            <tr>
+                                <td>AQA</td>
+                                <td>English Language</td>
+                                <td>7</td>
+                                <td>D</td>
+                            </tr>
+                            <tr>
+                                <td>AQA</td>
+                                <td>English Literature Option NM</td>
+                                <td>7</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>WJEC/GCS</td>
+                                <td>Music</td>
+                                <td>7</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>OCR</td>
+                                <td>Biology A (Gateway Sciences) -Hgh</td>
+                                <td>6</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>OCR</td>
+                                <td>Chemistry A (Gateway Sciences) -Hgh</td>
+                                <td>7</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>OCR</td>
+                                <td>Physics A (Gateway Sciences) -Hgh</td>
+                                <td>7</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>OCR</td>
+                                <td>Computer Science</td>
+                                <td>7</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>OCR</td>
+                                <td>Mathematics (Higher Tier)</td>
+                                <td>6</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+
+                <hr />
+                <h2>📦 Portfolio</h2>
+                <details style="margin-bottom: 2vh;">
+                    <summary>
+                        <b>Library Lookup System</b>
+                    </summary>
+                    <p>
+                        A simple web application to look up
+                        Dewey Decimal codes by discipline and vice versa, intended to increase
+                        accessibility to library services.
+                    </p>
+                    <p>
+                        I was inspired to develop this application after finding a lack of easily
+                        digestible breakdowns of the popular Dewey Decimal System online. You can
+                        view the application <a href="https://ddlookup.info/" style="color: #fff;">here</a>.
+                    </p>
+                </details>
+
+                <details style="margin-bottom: 2vh;">
+                    <summary>
+                        <b>Customisable Flashcard Application</b>
+                    </summary>
+                    <p>
+                        Developed as a part of my coursework for A-Level Computer Science,
+                        this simple yet versatile application was built using a limited set of
+                        tools and resources as provided by my school and exam board.
+                    </p>
+                    <p>
+                        You can download a copy of the codebase from
+                        <a href="https://github.com/brunt-toast/A-Level-Project/" style="color: #fff;">GitHub</a>.
+                        Installation takes just a click, given a compatible Python3 interpreter.
+                    </p>
+                </details>
+
+                <details style="margin-bottom: 2vh;">
+                    <summary>
+                        <b>EPQ Dissertation</b>
+                    </summary>
+                    <p>
+                        Could machine translation solutions ever truly replace human translators?
+                        This is the question I attempt to answer in my EPQ dissertation.
+                        The dissertation can be viewed
+                        <a href="epq-essay.html" style="color: #fff;">here</a>.
+                    </p>
+                </details>
+
+                <hr />
+                <h2>💡 Skills</h2>
+                <details style="margin-bottom: 2vh;">
+                    <summary><b>💻 Programming</b></summary>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Professional experience with C#, HTML, CSS<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Extensive educational experience with Python<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Limited experience with JavaScript, TSQL, XAML<br />
+                </details>
+                <details style="margin-bottom: 2vh;">
+                    <summary><b>⚙️ Technical</b></summary>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ General computer proficiency including office software<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Speed typing at >90WPM<br />
+                </details>
+                <details style="margin-bottom: 2vh;">
+                    <summary><b>🍎 Core</b></summary>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Teamwork &amp; leadership<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Organisation &amp; time management<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Research &amp; communication<br />
+                </details>
+
+                <hr />
+                <h2>🏆 Awards</h2>
+                <details style="margin-bottom: 2vh;">
+                    <summary><b>🚀 ESA Astro Pi Challenge</b></summary>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Wrote code to collect & analyse weather data<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Coded for specialised sensor & processing hardware<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Code deployed to run on the International Space Station
+                    (ISS)<br />
+                </details>
+                <details style="margin-bottom: 2vh;">
+                    <summary><b>🛡️ CyberCenturion Cyber Security Competition</b></summary>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Competed in the national semi-finals of a cybersecurity
+                    competition<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⤷ Identified and patched security vulnerabilities in Windows
+                    and Linux systems<br />
+                </details>
+
+                <hr />
+                <h2>🌍 Languages</h2>
+                <details open style="margin-bottom: 1vh;">
+                    <summary>🇬🇧 English ★★★★★ <span class="text-secondary">Native Speaker</span></summary>
+                    <ul>
+                        <li>Native speaker of British English</li>
+                        <li>Outstanding spelling &amp; grammar</li>
+                        <li><a href="Tandem-Certificate-C1-English.pdf" style="color: #fff;">Certified</a> CEFR level C1 (fluent)</li>
+                    </ul>
+                </details>
+
+                <details style="margin-bottom: 1vh;">
+                    <summary>🇫🇷 French ★★★★☆ <span class="text-secondary">Conversationally fluent</span></summary>
+                    <ul>
+                        <li>Conversationally fluent in Metropolitan French</li>
+                        <li>GCSE grade 8 with Distinction for speaking</li>
+                        <li>A-Level grade B</li>
+                        <li>Pursuing independent DELF qualifications</li>
+                    </ul>
+                </details>
+
+                <details style="margin-bottom: 1vh;">
+                    <summary>🇯🇵 Japanese ★★☆☆☆ <span class="text-secondary">Intermediate</span></summary>
+                    <ul>
+                        <li>Intermediate level in Eastern Japanese</li>
+                        <li>Currently studying with a tutor</li>
+                        <li>Pursuing JLPT N4 qualification</li>
+                    </ul>
+                </details>
+
+                <details style="margin-bottom: 1vh;">
+                    <summary>👋 British Sign Language (BSL) ★★☆☆☆ <span class="text-secondary">Intermediate</span>
+                    </summary>
+                    <ul>
+                        <li>Intermediate level in British Sign Language</li>
+                        <li>Studying independently to promote accessibility</li>
+                    </ul>
+                </details>
+
+            </div>
+            <div id="footer">
+                <small class="text-secondary">Identifying information omitted for privacy.</small>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

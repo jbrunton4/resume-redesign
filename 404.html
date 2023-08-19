@@ -1,0 +1,56 @@
+<html>
+{% include 'components/head.html' %}
+
+<body>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div id="main">
+            <nav>
+                <div class="tab"><a href="..">(Back)</a></div>
+                <div class="tab active"><a href="details">.../details.md</a></div>
+                <div class="tab tab-small" id="nav-min"><a href="">🗕</a></div>
+                <div class="tab tab-small" id="nav-max"><a href="">🗖</a></div>
+                <div class="tab tab-small" id="nav-close"><a href="">✕</a></div>
+            </nav>
+            <div id="content">
+
+                <h1>Oops!</h1>
+                <h2>That's an error. (404)</h2>
+
+                <hr />
+
+                The requested resource could not be located. 
+
+                It might have been moved, deleted, or made temporarily unavailable.
+
+                <br /><br />
+                <details>
+                    <summary><u>Click here for error details.</u></summary>
+                    {{ error }}
+                </details>
+                
+            </div>
+
+            <div id="footer">
+                <a href="https://www.twitch.tv/posh_____">
+                    <button class="footer-btn" title="Twitch (posh_____)">
+                        <iconify-icon icon="mdi:twitch"></iconify-icon></button>
+                </a>
+                <a href="https://steamcommunity.com/profiles/76561198374490108">
+                    <button class="footer-btn" title="Steam (Posh)">
+                        <iconify-icon icon="mdi:steam"></iconify-icon></button>
+                </a>
+                <a href="https://discordapp.com/users/425328470940188672">
+                    <button class="footer-btn" title="Discord (posh_)">
+                        <iconify-icon icon="ic:round-discord"></iconify-icon></button>
+                </a>
+
+
+                
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
