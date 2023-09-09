@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3 frosted" style="box-shadow: 2px 2px 2px lightgrey; position: sticky; top: 0; z-index: 999999;">
+    <a class="navbar-brand" href="#">
+        <img src="{{ url_for('static', filename='img/avatar.png') }}" width="30" height="30"
+            class="d-inline-block align-top" alt="">
+        Josh Brunton
+    </a>
+    <a class="navbar-brand text-muted" href="#">Software Developer</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="position: absolute; right: 2vw;">
+        <div class="navbar-nav">
+            <a onclick="setActive();" class="nav-item nav-link" id="home-navItem" href="#home">Home <span class="sr-only"></span></a>
+            <a onclick="setActive();" class="nav-item nav-link" id="experience-navItem" href="#experience">Experience</a>
+            <a onclick="setActive();" class="nav-item nav-link" id="education-navItem" href="#education">Education</a>
+            <a onclick="setActive();" class="nav-item nav-link" id="portfolio-navItem" href="#portfolio">Portfolio</a>
+            <a onclick="setActive();" class="nav-item nav-link" id="skills-navItem" href="#skills">Skills</a>
+            <a onclick="setActive();" class="nav-item nav-link" id="awards-navItem" href="#awards">Awards &amp; Certifications</a>
+            <a onclick="setActive();" class="nav-item nav-link" id="languages-navItem" href="#languages">Languages</a>
+        </div>
+    </div>
+</nav>
+
+<script defer>
+    function setActive() {
+        let hash = window.location.hash;
+        document.getElementById(`${hash}-navItem`).classList.add("active");
+    }
+</script>

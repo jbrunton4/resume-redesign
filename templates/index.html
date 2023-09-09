@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include 'common/head.html' %}
+</head>
+
+<body id="home">
+    {% include 'common/navbar.html' %}
+
+    <main>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-8 row frosted" style="padding-top: 15px;">
+
+                    <div class="col-3 ">
+                        <img src="{{ url_for('static', filename='img/avatar.png') }}"
+                        style="width: 100%; border-radius: 50%; border: 5px solid black;" />
+                    </div>
+
+                    <div class="col-9">
+                        <h1>Josh Brunton</h1>
+                    <h2 class="text-secondary">Software Developer</h2>
+                    <p>
+                        Software developer based in Yorkshire, England.
+                        Currently working for a small company delivering Dynamics 365 solutions to UK
+                        and international clients.
+                    </p>
+                    </div>
+                </div>
+                <div class="col-1" style="position: relative;">
+                    <div class="btn-group-vertical" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                        <a href="" role="button" class="btn btn-outline-secondary">
+                            <iconify-icon icon="mdi:github"></iconify-icon>
+                        </a>
+                        <a href="" role="button" class="btn btn-outline-secondary">
+                            <iconify-icon icon="mdi:linkedin"></iconify-icon>
+                        </a>
+                        <a href="" role="button" class="btn btn-outline-secondary">
+                            <iconify-icon icon="tabler:brand-x"></iconify-icon>
+                        </a>
+                        <a href="" role="button" class="btn btn-outline-secondary">
+                            <iconify-icon icon="mdi:email"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 frosted" style="padding: 20px;">
+                    <h3>Local Time</h3>
+                    <span class="text-muted">In&nbsp;</span><span id="local-timezone"></span><br />
+                    <span class="text-muted">It is&nbsp;</span><span id="local-time"></span><br />
+                    <span class="text-muted">On&nbsp;</span><span id="local-date"></span>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row" id="experience">
+                <h2>Experience</h2>
+
+                <div class="col-4">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://hsl.chapinindustries.com/wp-content/uploads/2020/09/222ckwveyjq8rjnztayrz150ylw.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior .NET Developer</h5>
+                            <p class="text-secondary" title="Location redacted for privacy"><b>Local Company</b> | JUL
+                                2023 - PRESENT</p>
+                            <p class="card-text">
+                            <ul>
+                                <li>Invited back full-time after an internship in 2021</li>
+                                <li>
+                                    Working in a small team to deliver Dynamics 365 solutions
+                                    to UK and international clients
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Wetherby_High_School_%286th_February_2013%29_003.JPG/750px-Wetherby_High_School_%286th_February_2013%29_003.JPG"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Teaching Assistant</h5>
+                            <p class="text-secondary" title="Location redacted for privacy"><b>Wetherby High School</b>
+                                | JUN-JUL 2021</p>
+                            <p class="card-text">
+                            <ul>
+                                <li>Fixed-term volunteering opportunity</li>
+                                <li>Lead GCSE computer science classes</li>
+                                <li>Created teaching and study materials</li>
+                            </ul>
+                            </p>
+                            <a href="#" class="btn btn-primary">Read a Reference</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://d3nag6e3dddgye.cloudfront.net/uploads/container/374974/icon/Blank_square_for_logo_YE_FQ4Vyerj6JqxZL95oTAzoV.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Developer &amp; Salesperson</h5>
+                            <p class="text-secondary" title="Location redacted for privacy"><b>Young Enterprise</b> |
+                                OCT 2019 - MAR 2020</p>
+                            <p class="card-text">
+                            <ul>
+                                <li>Working as part of my school's team</li>
+                                <li>Designed and maintained an informational site</li>
+                                <li>Promoted and sold products at sales events</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row" id="education">
+                <h2>Education</h2>
+
+                <div class="col-6">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://www.yorkshirepost.co.uk/webimg/b25lY21zOmQzOTVhMjU2LTQwZDgtNDA4NC1iN2E4LTFmMDY2ZjE0YTA1MjozMjc5MjQ4Mi0wYTNhLTQ0NzktYTFjNC1lMGRjNTM5ZDAxYjg=.jpg?width=1200&enable=upscale"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">A-Levels</h5>
+                            <p class="text-secondary" title="Location redacted for privacy"><b>King James's
+                                    6<sup>th</sup> Form</b> |
+                                SEPT 2021 - JUN 2023</p>
+                            <p class="card-text">
+                            <ul>
+                                <li><b>A</b> in Level 3 Extended Project Qualification</li>
+                                <li><b>B</b> in French</li>
+                                <li><b>C</b> in Computer Science</li>
+                                <li><b>Pass</b> in Level 3 Health &amp; Social Care</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://images.snobe.co.uk/gallery/108088/439ab6f9_Wetherby-High-School.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">GCSEs</h5>
+                            <p class="text-secondary" title="Location redacted for privacy"><b>Wetherby High School</b>
+                                | SEPT 2016 - JUN 2021</p>
+                            <details class="card-text">
+                                <summary>
+                                    10 GCSE qualifications
+                                    <iconify-icon icon="ic:round-expand-more"></iconify-icon>
+                                </summary>
+                                <hr />
+                                <ul>
+                                    <li><b>8</b> with distinction in Higher French</li>
+                                    <li><b>8</b> in Computer Science</li>
+                                    <li><b>7</b> in Chemistry</li>
+                                    <li><b>7</b> in English Literature</li>
+                                    <li><b>7</b> in Food Preparation And Nutrition</li>
+                                    <li><b>7</b> in Music</li>
+                                    <li><b>7</b> in Physics</li>
+                                    <li><b>6</b> in Biology</li>
+                                    <li><b>6</b> in Higher Mathematics</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row" id="portfolio">
+                <h2>Portfolio</h2>
+
+                <div class="col-6">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">EPQ Dissertation</h5>
+                            <p class="text-secondary" title="Location redacted for privacy">
+                                "Could Machine Translation Replace Human Translators?"
+                            </p>
+                            <p class="card-text">
+                                Exploring the fascinating intersection between
+                                computer science and linguistics, researching
+                                this dissertation gave me a strong foundation in the
+                                principles behind language models.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Coming Soon...</h5>
+                            <p class="card-text">
+                                More portfolio content coming soon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row" id="skills">
+                <h2>Skills</h2>
+
+                <div class="col-4">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Programming</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>
+                                    Professional experience with:
+                                    <iconify-icon style="margin-right: 5px;" icon="devicon:csharp"></iconify-icon>
+                                    <iconify-icon style="margin-right: 5px;"
+                                        icon="vscode-icons:file-type-html"></iconify-icon>
+                                    <iconify-icon style="margin-right: 5px;"
+                                        icon="vscode-icons:file-type-css"></iconify-icon>
+                                    <iconify-icon style="margin-right: 5px;" icon="simple-icons:xaml"></iconify-icon>
+                                    <iconify-icon style="margin-right: 5px;"
+                                        icon="vscode-icons:file-type-json"></iconify-icon>
+                                </li>
+                                <li>
+                                    Educational experience with:
+                                    <iconify-icon style="margin-right: 5px;"
+                                        icon="vscode-icons:file-type-python"></iconify-icon>
+                                    <iconify-icon style="margin-right: 5px;" icon="logos:javascript"></iconify-icon>
+                                    <iconify-icon style="margin-right: 5px;"
+                                        icon="vscode-icons:file-type-sqlite"></iconify-icon>
+                                </li>
+                                <li></li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>General computer proficiency including office software</li>
+                                <li>Speed typing at &gt;90wpm</li>
+                                <li>Tech support</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Core</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>Teamwork & leadership</li>
+                                <li>Organisation & time management</li>
+                                <li>Research & communication</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+            <div class="row" id="awards">
+                <h2>Awards &amp; Certifications</h2>
+
+                <div class="col-3">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="{{ url_for('static', filename='img/c_sharp_cert.png') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Foundational C# with Microsoft</h5>
+                            <p class="card-text">
+                            <details class="card-text">
+                                <summary>
+                                    And <b>3 more</b> coding qualifications
+                                    <iconify-icon icon="ic:round-expand-more"></iconify-icon>
+                                </summary>
+                                <hr />
+                                <ul>
+                                    <li><a
+                                            href="https://www.freecodecamp.org/certification/JoshBrunton/foundational-c-sharp-with-microsoft">Foundational
+                                            C# With Microsoft</a></li>
+                                    <li><a
+                                            href="https://www.freecodecamp.org/certification/JoshBrunton/responsive-web-design">Responsive
+                                            Web Design</a></li>
+                                    <li><a
+                                            href="https://www.freecodecamp.org/certification/JoshBrunton/javascript-algorithms-and-data-structures">JavaScript
+                                            Algorithms And Data Structures</a></li>
+                                    <li><a
+                                            href="https://www.freecodecamp.org/certification/JoshBrunton/scientific-computing-with-python-v7">Scientific
+                                            Computing With Python</a></li>
+                                </ul>
+                            </details>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="{{ url_for('static', filename='img/english_cert.png') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tandem C1 English</h5>
+                            <p class="card-text">
+                                Verified CEFR level C1 (fluent) in English.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://static.nationalgeographic.co.uk/files/styles/image_3200/public/nespoli-iss.png?w=1900&h=1732"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">ESA Astro Pi Challenge</h5>
+                            <p class="card-text">
+                                Wrote code to collect weather data and analyse cloud patterns using
+                                machine learning. Coding for specialised sensor and processor hardware,
+                                my program was accepted to run on the International Space Station.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://www.theforage.com/blog/wp-content/uploads/2022/12/what-is-cybersecurity.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">CyberCenturion Cyber Security Competition</h5>
+                            <p class="card-text">
+                                Progressed to the national semi-finals of a cyber security competition,
+                                identifying and patching vulnerabilities on Windows and Linux systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <hr />
+            <div class="row" id="languages">
+                <h2>Languages</h2>
+
+                <div class="col">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">English</h5>
+                            <p class="text-secondary">★★★★★</p>
+                            <p class="card-text">
+                                Native speaker of British English with outstanding spelling and grammar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">French</h5>
+                            <p class="text-secondary">★★★★☆</p>
+                            <p class="card-text">
+                                Conversationally fluent in Metropolitan French, having studied at GCSE
+                                and A-Level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Japanese</h5>
+                            <p class="text-secondary">★★☆☆☆☆</p>
+                            <p class="card-text">
+                                Intermediate proficiency in Japanese. Studying with a tutor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://static.wixstatic.com/media/307eeb_e0a7123ea45b468f9edd3d95a7704976~mv2.jpg/v1/fit/w_500%2Ch_333%2Cal_c%2Cq_80,enc_auto/file.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">British Sign Language (BSL)</h5>
+                            <p class="text-secondary">★★☆☆☆</p>
+                            <p class="card-text">
+                                Independently studying BSL to increase accessibilty for D/deaf, mute,
+                                and hard-of-hearing people.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card m-1">
+                        <img class="card-img-top" style="height: 20vh; object-fit: cover;"
+                            src="https://images.unsplash.com/photo-1604351888999-9ea0a2851e61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Something Else...?</h5>
+                            <p class="text-secondary">☆☆☆☆☆</p>
+                            <p class="card-text">
+                                Open to learning experiences for personal and professional development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        {% include 'common/bootstrap-script.html' %}
+    </footer>
+</body>
+
+</html>
