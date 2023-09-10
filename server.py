@@ -7,4 +7,8 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 def index():
     return flask.render_template("index.html")
 
+@app.route("/whs-ref")
+def whs_ref():
+    return flask.render_template("whs-reference.html")
+
 app.run()
