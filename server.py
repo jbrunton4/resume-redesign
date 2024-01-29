@@ -11,4 +11,8 @@ def index():
 def whs_ref():
     return flask.render_template("whs-reference.html")
 
+@app.route("/mobile")
+def mobile():
+    return flask.render_template("mobile.html")
+
 app.run()
